@@ -1,5 +1,5 @@
 # algorithms_sandbox
-Java implementation of the popular algorithms
+Java implementation of popular algorithms
 # Current list
 
 * Union Find - Quick-Find
