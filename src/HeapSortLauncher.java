@@ -1,5 +1,3 @@
-package unionfind;
-
 import heapsort.BinaryHeap;
 import heapsort.HeapSort;
 
