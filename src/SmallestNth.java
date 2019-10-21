@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 /**
  * A QuickSelect implementation to find the Nth smallest number in an unsorted array.
- *
+ * <p>
  * Time complexity:
  * average & best: O(n)
  * worst: O(n2)
@@ -15,13 +15,20 @@ import java.util.Arrays;
 public class SmallestNth {
 
     public static void main(String[] args) {
-        int[] source = new int[]{7, 10, 4, 3, 20, 15};
 
-        // Let's try to get every Nth smallest number for debugging purposes
-        for (int i = 0; i < source.length; i++) {
-            System.out.printf("%s <--- Source, looking for %dth smallest%n", Arrays.toString(source), i + 1);
-            System.out.println(getNthMin(source, i));
+        int hash = 7;
+        int size = 4;
+
+
+        for (int i = 1; i < 10; i++) {
+            for (int j = 1; j < 150; j+=1) {
+                int h1 = j % (i+1);
+                int h2 = (i - 1) & j;
+                System.out.println(h1 + " - " + h2);
+            }
         }
+
+
     }
 
     public static int getNthMin(int[] arr, int m) {
